@@ -38,6 +38,9 @@
 #endif
 
 #ifdef _MSC_VER
+#   if _MSC_VER >= 1900
+#       define BETTER_ENUMS__HAVE_CONSTEXPR
+#   endif
 #   ifndef _CPPUNWIND
 #       define BETTER_ENUMS__NO_EXCEPTIONS
 #   endif
